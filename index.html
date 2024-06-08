@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head section -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="/content/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Moksha Solutions</title>
+
+    <!-- for socila media -->
+    <meta property="og:title" content="Moksha Solutions" />
+    <meta
+      property="og:description"
+      content="Our team of experts is dedicated to providing top-notch services in web design, software development, and digital marketing. We are committed to delivering innovative solutions that not only meet but exceed your expectations"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/content/images/Moksha-Logo.png" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+  </head>
+  <!-- body section -->
+
+  <body class="bg-gradient-to-r from-[#060606] to-[#060606]">
+    <main class="">
+      <!-- form model section  -->
+      <section class="">
+        <div class="container mx-auto px-4">
+          <div
+            class="wrapper overflow-auto fixed inset-0 pt-4 w-screen bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center p-1 sm:p-10 p-0 z-[1000]"
+          >
+            <div
+              class="relative mx-2 sm:mx-4 2xl:mx-10 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 2xl:my-10 sm:max-w-lg 2xl:max-w-2xl sm:w-full 2xl:w-full px-9 py-5"
+            >
+              <div class="flex justify-end pb-5">
+                <button
+                  onclick="hideForm()"
+                  class="bg-transparent border border-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="w-6 h-6 text-[#2A324B]"
+                    viewBox="0 0 1792 1792"
+                  >
+                    <path
+                      d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <h2
+                class="font-semibold text-center text-[#2A324B] text-2xl lg:text-3xl"
+              >
+                Fill Out the Inquiry Form
+              </h2>
+              <form id="myForm" class="px-0 sm:px-0">
+                <div class="w-full">
+                  <div class="grid grid-cols-1 gap-4 m-auto pt-5">
+                    <div class="relative z-0 col-span-2">
+                      <input
+                        maxlength="40"
+                        name="full_name"
+                        size="20"
+                        type="text"
+                        id="full_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#171C2C] peer"
+                        placeholder=""
+                        required
+                      />
+                      <label
+                        for="full_name"
+                        class="absolute text-sm text-[#020E1E] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#020E1E] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Full Name<sup class="text-red-600">*</sup></label
+                      >
+                    </div>
+                    <div class="relative z-0 col-span-2">
+                      <input
+                        type="text"
+                        maxlength="80"
+                        name="email"
+                        size="20"
+                        id="email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#171C2C] peer"
+                        placeholder=""
+                        required
+                      />
+                      <label
+                        for="email"
+                        class="absolute text-sm text-[#020E1E] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#020E1E] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Email<sup class="text-red-600">*</sup></label
+                      >
+                    </div>
+                    <div class="relative z-0 col-span-2">
+                      <input
+                        type="number"
+                        id="mobile_no"
+                        maxlength="40"
+                        name="mobile_no"
+                        size="20"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#171C2C] peer"
+                        placeholder=""
+                        required
+                      />
+                      <label
+                        for="mobile_no"
+                        class="absolute text-sm text-[#020E1E] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#020E1E] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Mobile<sup class="text-red-600">*</sup></label
+                      >
+                    </div>
+                    <div class="relative z-0 col-span-2">
+                      <input
+                        type="text"
+                        id="message"
+                        maxlength="150"
+                        name="message"
+                        size="20"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-[#171C2C] peer"
+                        placeholder=""
+                        required
+                      />
+                      <label
+                        for="message"
+                        class="absolute text-sm text-[#020E1E] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#020E1E] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >Message<sup class="text-red-600">*</sup></label
+                      >
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center">
+                      <div
+                        id="thankYouMessage"
+                        class="hidden my-4 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                      >
+                        <strong class="font-bold">Thank you!</strong> Your form
+                        has been submitted successfully.
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn relative rounded px-5 py-2.5 overflow-hidden group bg-[#2A324B] relative hover:bg-gradient-to-r hover:from-[#2A324B] hover:to-[#2A324B]transition-all ease-out duration-300 text-white border border-white rounded-full cursor-pointer"
+                      >
+                        <span
+                          class="absolute right-0 w-10 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+                        ></span>
+                        <span class="relative uppercase">Submit</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- navbar section -->
+      <section class="">
+        <div
+          class="sm:block 2xl:block hidden blur absolute right-0 top-[-18%] -z-[10] blur-3xl"
+        ></div>
+        <div
+          class="sm:hidden 2xl:hidden block blurr absolute right-0 top-[10%] -z-[10] blur-3xl"
+        ></div>
+
+        <!-- Moksha Logo Section For Header -->
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
+          class="w-full sm:w-11/12 mx-auto px-4 sm:px-0"
+        >
+          <div class="flex items-center justify-start py-1 sm:py-2">
+            <a href="https://mokshasolutions.com/" target="_blank">
+              <img
+                src="content/images/Moksha-Logo.png"
+                height="100px"
+                width="100px"
+                class="w-28 h-24 sm:w-36 sm:h-32 2xl:w-52 2xl:h-44 grayscale-0 hover:grayscale"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
+          class="w-full sm:w-11/12 mx-auto px-4 sm:px-0 sm:pb-0 pb-20"
+        >
+          <div class="max-w-xl sm:max-w-6xl 2xl:max-w-[90%]">
+            <div
+              class="uppercase text-white text-2xl sm:text-5xl 2xl:text-6xl text-pretty tracking-wider 2xl:tracking-widest sm:leading-snug 2xl:leading-snug font-bold pt-8 sm:pt-20 2xl:pt-10"
+            >
+              Welcome to
+              <h1
+                class="saturate-200 bg-gradient-to-br from-[#4f7ff8] to-[#B711B1] inline-block bg-clip-text text-transparent"
+              >
+                MOKSHA SOLUTIONS
+              </h1>
+              Transforming Your Digital Dreams <br />into Reality
+            </div>
+            <h5
+              class="text-white text-sm sm:text-xl 2xl:text-3xl pt-5 sm:pt-5 2xl:pt-8"
+            >
+              At <span class="font-medium">Moksha Solutions,</span> we
+              specialize in bringing your digital aspirations to life. Our team
+              of experts is dedicated to providing top-notch services in web
+              design, software development, and digital marketing. We are
+              committed to delivering innovative solutions that not only meet
+              but exceed your expectations
+            </h5>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="pt-10 sm:pt-16"
+            >
+              <a
+                href="https://mokshasolutions.com/"
+                target="_blank"
+                class="px-4 py-2 sm:px-6 sm:py-3 2xl:px-14 2xl:py-6 text-xs sm:text-xs 2xl:text-sm tracking-widest font-medium text-center text-white transition duration-300 rounded-3xl sm:rounded-3xl 2xl:rounded-full hover:bg-none hover:border hover:border-white hover:border-solid border border-solid ease saturate-200 bg-gradient-to-br from-[#4f7ff8] to-[#B711B1] md:w-auto"
+              >
+                CONTACT US
+              </a>
+            </div>
+          </div>
+
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+            AOS.init({ duration: 1500, offset: 50 });
+            AOS.refresh();
+          </script>
+        </div>
+      </section>
+      <!-- Our Core Services section -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0 pb-32 sm:pt-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          class=""
+        >
+          <h2
+            class="text-3xl sm:text-5xl 2xl:text-6xl text-white py-20 sm:py-28 2xl:py-52"
+          >
+            Our Core Services
+          </h2>
+        </div>
+        <!-- table section -->
+        <div class="grid grid-cols-1 sm:grid-rows-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              01
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Digital Marketing Services
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Boost your online presence with our comprehensive digital
+              marketing strategies. From SEO and SEM to social media marketing
+              and content creation, we ensure your brand reaches the right
+              audience.
+            </h2>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              02
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Website Development
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Create a stunning and functional website with our expert
+              development services. We build responsive, user-friendly, and
+              aesthetically pleasing websites tailored to your needs
+            </h2>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              03
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Mobile App Development
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Stay ahead in the mobile-first world with our cutting-edge mobile
+              app development. We design and develop apps that provide seamless
+              user experiences on both iOS and Android platforms.
+            </h2>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              04
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Software Development
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Streamline your business operations with our custom software
+              solutions. We develop software that enhances productivity,
+              efficiency, and profitability.
+            </h2>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              05
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Payment Gateway Integration
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Simplify transactions with our secure and reliable payment gateway
+              integration services. We ensure smooth and safe online payment
+              processes for your business.
+            </h2>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col sm:flex-row gap-x-0 gap-y-4 sm:gap-x-10 sm:gap-y-5 border-b border-white border-solid sm:py-10 py-10 items-start justify-between"
+          >
+            <h2
+              class="text-blue-500 text-3xl sm:text-5xl 2xl:text-6xl sm:max-w-lg 2xl:max-w-xl"
+            >
+              06
+            </h2>
+            <h2
+              class="text-white text-xl sm:text-4xl 2xl:text-6xl font-normal sm:max-w-xs 2xl:max-w-xl"
+            >
+              Corporate Branding
+            </h2>
+            <h2
+              class="text-white sm:text-xl 2xl:text-2xl font-light sm:max-w-xl 2xl:max-w-2xl"
+            >
+              Elevate your brand identity with our corporate branding services.
+              From logo design to e-brochures, postcards, business cards,
+              letterheads, and product catalogs, we create visually compelling
+              and cohesive brand materials.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- Videos section -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          class=""
+        >
+          <h2
+            class="text-3xl sm:text-5xl 2xl:text-6xl text-white py-20 sm:py-28 2xl:py-52"
+          >
+            Our Variety Of Content
+          </h2>
+          <div
+            class="grid grid-cols-1 xl:grid-cols-3 sm:grid-cols-2 gap-y-20 gap-x-0 sm:gap-y-20 sm:gap-x-10"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/ncnYSrtM1E8?si=itw0Qt76uYyFGKS5"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  G-Tech Jain Edu (SAP-FICO)
+                </h2>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/ulO_10hn_k4?si=1jWgxvEkTSGCqPbg"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  Bhondawe Patil School
+                </h2>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/XdVk26loOgQ?si=iu9D6fsDxGEuxD3N"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  Cytix
+                </h2>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/T0XI9pV7Z_g?si=BoPawFJpiDc0jzJm"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  Juddi Group
+                </h2>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/diPuQv0gDHo?si=62mzb3C_vpjJcRbl"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  G-Tech Jain Edu
+                </h2>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col"
+            >
+              <div
+                class="border border-solid border-blue-500 p-1 sm:w-fit 2xl:w-fit h-fit overflow-hidden"
+              >
+                <iframe
+                  width="400"
+                  height="225"
+                  class="w-full sm:w-[360px] 2xl:w-[500px] 2xl:h-[300px]"
+                  src="https://www.youtube.com/embed/YbunmiTNpZs?si=OnHUo7o8sM2G3bB2"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="sm:w-[370px] 2xl:w-[510px]">
+                <h2
+                  class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-blue-500 tracking-wide"
+                >
+                  Kt Guru
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0 sm:pt-32">
+        <div class="">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="py-20 sm:py-28 2xl:py-52"
+          >
+            <h2 class="text-3xl sm:text-5xl 2xl:text-6xl text-white">
+              Our Portfolio
+            </h2>
+            <p
+              class="sm:max-w-3xl 2xl:max-w-5xl text-white font-light text-base sm:text-2xl 2xl:text-3xl py-5"
+            >
+              Check out some of our recent projects to see how we have helped
+              businesses like yours succeed in the digital world.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-y-20 gap-x-0 sm:gap-y-20 sm:gap-x-32"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.ktguru.com/" target="_blank">
+                  <img
+                    src="/content/images/KT-Guru.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.ktguru.com/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Kt Guru
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.slinteriors.ae/" target="_blank">
+                  <img
+                    src="/content/images/arabic-group-of-interiors-dubai.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.slinteriors.ae/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Arabic Group Of Interiors
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.juddigroup.com/" target="_blank">
+                  <img
+                    src="/content/images/Juddi Group.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.juddigroup.com/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Juddi Group
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.gurumishrihmc.edu.in/" target="_blank">
+                  <img
+                    src="/content/images/Guru-Mishri-college.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.gurumishrihmc.edu.in/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Guru Mishri College
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.bhondawepatilschool.in/" target="_blank">
+                  <img
+                    src="/content/images/bhondawe-patil-school.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.bhondawepatilschool.in/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Bhondawe Patil School
+                  </h2>
+                </a>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              class="flex flex-col group"
+            >
+              <div
+                class="border border-solid border-[#B711B1] p-1 sm:w-80 2xl:w-full h-96 overflow-hidden image-wrap"
+              >
+                <a href="https://www.urbanexpress.ae/" target="_blank">
+                  <img
+                    src="/content/images/urban-exp.png"
+                    alt=""
+                    height="100px"
+                    width="100px"
+                    class="w-fit"
+                  />
+                </a>
+              </div>
+              <div class="sm:w-80 2xl:w-full">
+                <a href="https://www.urbanexpress.ae/" target="_blank">
+                  <h2
+                    class="text-white sm:text-2xl font-normal text-center py-4 mt-2 border border-solid border-[#B711B1] group-hover:text-[#B711B1] tracking-wide"
+                  >
+                    Urban Express
+                  </h2>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why poeple choose us Section -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          class="pt-28"
+        >
+          <h2
+            class="max-w-6xl text-white text-3xl sm:text-6xl 2xl:text-7xl text-pretty tracking-wide leading-tight font-normal sm:pt-24"
+          >
+            See why people
+            <span
+              class="saturate-200 bg-[#4f7ff8] bg-clip-text text-transparent"
+            >
+              choose us...
+            </span>
+          </h2>
+          <p
+            class="sm:max-w-2xl 2xl:max-w-4xl text-white font-light text-base sm:text-2xl 2xl:text-3xl py-8"
+          >
+            we help small and medium-sized businesses to effectively increase
+            thier value in the market.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-20 pt-16 relative z-50"
+        >
+          <div
+            class="sm:block 2xl:block hidden blurr absolute right-0 top-[-10%] -z-[5] blur-3xl"
+          ></div>
+          <div
+            class="sm:hidden 2xl:hidden block blurr absolute right-0 top-[10%] -z-[5] blur-3xl"
+          ></div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col items-start justify-start"
+          >
+            <h2
+              class="text-2xl sm:text-3xl 2xl:text-4xl text-white font-normal"
+            >
+              Expert Team
+            </h2>
+            <p
+              class="sm:text-xl 2xl:text-2xl text-white font-light max-w-2xl pt-5"
+            >
+              Our team consists of experienced professionals who are passionate
+              about what they do. We stay updated with the latest industry
+              trends to provide you with cutting-edge solutions.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col items-start justify-start"
+          >
+            <h2
+              class="text-2xl sm:text-3xl 2xl:text-4xl text-white font-normal"
+            >
+              Customer-Centric Approach
+            </h2>
+            <p
+              class="sm:text-xl 2xl:text-2xl text-white font-light max-w-2xl pt-5"
+            >
+              Your satisfaction is our priority. We work closely with you to
+              understand your requirements and deliver personalized solutions
+              that align with your business goals
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col items-start justify-start"
+          >
+            <h2
+              class="text-2xl sm:text-3xl 2xl:text-4xl text-white font-normal"
+            >
+              Quality Assurance
+            </h2>
+            <p
+              class="sm:text-xl 2xl:text-2xl text-white font-light max-w-2xl pt-5"
+            >
+              We are committed to delivering high-quality services. Our rigorous
+              quality assurance processes ensure that every project we undertake
+              meets the highest standards.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="flex flex-col items-start justify-start"
+          >
+            <h2
+              class="text-2xl sm:text-3xl 2xl:text-4xl text-white font-normal"
+            >
+              Timely Delivery
+            </h2>
+            <p
+              class="sm:text-xl 2xl:text-2xl text-white font-light max-w-2xl pt-5"
+            >
+              We value your time. Our efficient project management ensures that
+              we deliver your projects on time, every time.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          class="pt-28"
+        >
+          <h2
+            class="max-w-6xl text-white text-3xl sm:text-6xl 2xl:text-7xl text-pretty tracking-wide leading-tight font-normal sm:pt-24"
+          >
+            Client Testimonials
+          </h2>
+          <p
+            class="sm:max-w-2xl 2xl:max-w-4xl text-white font-light text-base sm:text-2xl 2xl:text-3xl sm:py-5 2xl:py-5 py-1"
+          >
+            Read What They Say About Us
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-4 gap-y-10 sm:gap-y-0 sm:gap-x-14 sm:pt-20 pt-20"
+        >
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="card shadow-sm drop-shadow-lg shadow-[#4f7ff8] border border-solid border-[#4f7ff8] rounded-xl sm:max-w-lg h-72 sm:h-80 2xl:h-80 sm:px-5 sm:py-5 px-8 py-8 flex flex-col items-center justify-center"
+          >
+            <div class="sm:pb-5 pb-10">
+              <p
+                class="text-[#f6f6f6] font-light text-xl sm:text-xl 2xl:text-2xl text-left text-center"
+              >
+                &#10077; Moksha solutions has been instrumental in boosting our
+                online presence. Their expertise in digital marketing is
+                unparalleled. &#10078;
+              </p>
+            </div>
+            <div class="sm:pt-4 pt-2 border-t border-solid border-[#4f7ff8]">
+              <h2
+                class="text-[#4f7ff8] font-normal text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Dr. Purva Ajmera
+              </h2>
+              <h3
+                class="text-[#4f7ff8] font-light text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Ajmera Dental
+              </h3>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="card shadow-sm drop-shadow-lg shadow-[#4f7ff8] border border-solid border-[#4f7ff8] rounded-xl sm:max-w-lg h-72 sm:h-80 2xl:h-80 sm:px-5 sm:py-5 px-8 py-8 flex flex-col items-center justify-center"
+          >
+            <div class="sm:pb-10 pb-10">
+              <p
+                class="text-[#f6f6f6] font-light text-xl sm:text-xl 2xl:text-2xl text-left text-center"
+              >
+                &#10077; The team at moksha solutions developed a fantastic
+                website for us. It is user friendly and visually appealing.
+                &#10078;
+              </p>
+            </div>
+            <div class="sm:pt-4 pt-2 border-t border-solid border-[#4f7ff8]">
+              <h2
+                class="text-[#4f7ff8] font-normal text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Rehan Juddi
+              </h2>
+              <h3
+                class="text-[#4f7ff8] font-light text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Juddi Group
+              </h3>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="card shadow-sm drop-shadow-lg shadow-[#4f7ff8] border border-solid border-[#4f7ff8] rounded-xl sm:max-w-lg h-72 sm:h-80 2xl:h-80 sm:px-5 sm:py-5 px-8 py-8 flex flex-col items-center justify-center"
+          >
+            <div class="sm:pb-10 pb-10">
+              <p
+                class="text-[#f6f6f6] font-light text-xl sm:text-xl 2xl:text-2xl text-left text-center"
+              >
+                &#10077; Our new mobile app has received great feedback, all
+                thanks to moksha solutions brilliant development team. &#10078;
+              </p>
+            </div>
+            <div class="sm:pt-4 pt-2 border-t border-solid border-[#4f7ff8]">
+              <h2
+                class="text-[#4f7ff8] font-normal text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Manoj Savale
+              </h2>
+              <h3
+                class="text-[#4f7ff8] font-light text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                BPPS
+              </h3>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="card shadow-sm drop-shadow-lg shadow-[#4f7ff8] border border-solid border-[#4f7ff8] rounded-xl sm:max-w-lg h-72 sm:h-80 2xl:h-80 sm:px-5 sm:py-5 px-8 py-8 flex flex-col items-center justify-center"
+          >
+            <div class="sm:pb-10 pb-10">
+              <p
+                class="text-[#f6f6f6] font-light text-xl sm:text-xl 2xl:text-2xl text-left text-center"
+              >
+                &#10077; Moksha solutions revolutionized our workflow with their
+                innovative software solution. thank you. &#10078;
+              </p>
+            </div>
+            <div class="sm:pt-4 pt-2 border-t border-solid border-[#4f7ff8]">
+              <h2
+                class="text-[#4f7ff8] font-normal text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Dr. Yogesh Desarda
+              </h2>
+              <h3
+                class="text-[#4f7ff8] font-light text-xl sm:text-xl 2xl:text-2xl text-pretty text-center"
+              >
+                Guru Mishri HMC
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- marketting para section  -->
+      <section class="w-full sm:w-11/12 mx-auto px-4 sm:px-0 sm:pt-40">
+        <div class="grid sm:grid-rows-2">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            class="sm:flex sm:flex-rows items-center sm:justify-between py-10 sm:py-0"
+          >
+            <h2
+              class="max-w-xl sm:max-w-2xl 2xl:max-w-5xl text-center sm:text-left text-white text-3xl sm:text-5xl 2xl:text-7xl text-pretty tracking-wider leading-snug font-normal pt-20 sm:pt-0"
+            >
+              Let&#39;s discuss your
+              <span
+                class="saturate-200 bg-[#B711B1] bg-clip-text text-transparent"
+              >
+                vision
+              </span>
+              and see how we can turn your
+              <span
+                class="saturate-200 bg-[#4f7ff8] bg-clip-text text-transparent"
+              >
+                idea
+              </span>
+              into reality.
+            </h2>
+
+            <!-- Two buttons section -->
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-y-5 sm:gap-y-0 2xl:gap-y-0 py-8 sm:py-0 2xl:py-0 sm:gap-x-5 2xl:gap-x-10"
+            >
+              <!-- Enquire Now button for desktop -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+                class=""
+              >
+                <button
+                  onclick="showForm()"
+                  class="px-4 py-2 sm:px-8 sm:py-3 2xl:px-14 2xl:py-5 text-xs sm:text-xs 2xl:text-sm tracking-widest font-medium text-center text-white transition duration-300 rounded-3xl sm:rounded-3xl 2xl:rounded-full hover:bg-none hover:border hover:border-white hover:border-solid border border-solid ease-in-out saturate-200 bg-gradient-to-br from-[#4f7ff8] to-[#B711B1] md:w-auto"
+                >
+                  ENQUIRE NOW
+                </button>
+              </div>
+
+              <!-- Call Now button for mobile -->
+              <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="300"
+                data-aos-easing="ease-in-out"
+                class=""
+              >
+                <a
+                  href="https://api.whatsapp.com/send?phone=919372272241"
+                  class="px-4 py-2 sm:px-8 sm:py-3 2xl:px-14 2xl:py-5 text-xs sm:text-xs 2xl:text-sm tracking-widest font-bold text-center text-white transition duration-300 rounded-3xl hover:text-[#B711B1] bg-[#060606] border border-white border-solid hover:border-[#B711B1] hover:border hover:border-solid ease md:w-auto"
+                >
+                  ONLINE MEETING
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fixed Chat Now action Button section -->
+      <section class="">
+        <div
+          class="hidden sm:block 2xl:block blink-button fixed right-0 bottom-44 z-40 group"
+        >
+          <div class="relative top-2 -left-1 flex h-3 w-3">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 group-hover:bg-red-500 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-3 w-3 bg-[#4f7ff8] group-hover:bg-red-600"
+            ></span>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=919372272241">
+            <button
+              class="border-[#4f7ff8] hover:border-red-600 border-solid border bg-[#060606] text-sm sm:text-base 2xl:text-lg px-2 py-2 sm:px-2 sm:py-2 2xl:px-4 2xl:py-3 font-bold hover:text-red-600 hover:bg-[#060606] text-[#4f7ff8]"
+            >
+              &#128229; Chat Now
+            </button>
+          </a>
+        </div>
+
+        <div
+          class="sm:hidden 2xl:hidden blink-button fixed right-0 bottom-[260px] z-40 group"
+        >
+          <div class="relative top-2 -left-1 flex h-3 w-3">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 group-hover:bg-red-500 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-3 w-3 bg-[#4f7ff8] group-hover:bg-red-600"
+            ></span>
+          </div>
+          <a href="tel:7796115333">
+            <button
+              class="border-[#4f7ff8] hover:border-red-600 border-solid border bg-[#060606] text-sm sm:text-base px-2 py-2 font-bold hover:text-red-600 hover:bg-[#060606] text-[#4f7ff8]"
+            >
+              &#128382; Call Now
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <section class="sm:pt-10 pt-5 w-full sm:w-11/12 mx-auto px-4 sm:px-0">
+        <footer class="border-t border-white border-solid">
+          <div class="flex items-center justify-center pt-0 sm:pt-0">
+            <a href="https://mokshasolutions.com/" target="_blank" class="">
+              <img
+                src="/content/images/Moksha-Logo.png"
+                alt="log"
+                width="100px"
+                height="100px"
+                class="w-32 h-28 sm:w-40 sm:h-36 2xl:w-56 2xl:h-40 grayscale-0 hover:grayscale"
+              />
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <a
+              href="https://www.google.com/maps/place/Sai+Trade+Center/@19.8615883,75.3081619,17z/data=!4m6!3m5!1s0x3bdb98593e85dde3:0x766ed0b4697a7351!8m2!3d19.8615833!4d75.3107368!16s%2Fg%2F1hdzj85hy?hl=en&entry=ttu"
+              target="_blank"
+              class="cursor-pointer text-[#f9f9f9] tracking-wider hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal"
+            >
+              &#127970; Office No. 311, Sai Trade Centre, Road, MIDC,
+              Aurangabad, Maharashtra 431001
+            </a>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-y-2 sm:gap-y-0 2xl:gap-y-0 sm:gap-x-28 2xl:gap-x-32 pt-2 sm:pt-3 2xl:pt-5"
+          >
+            <div class="flex">
+              <a
+                href="https://api.whatsapp.com/send?phone=919372272241"
+                class="sm:block 2xl:block hidden text-[#f9f9f9] hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal tracking-wider"
+              >
+                &#9742; +91-9372272241
+              </a>
+              <a
+                href="tel:+919372272241"
+                class="sm:hidden 2xl:hidden block text-[#f9f9f9] hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal tracking-wider"
+              >
+                &#9742; +91-9372272241
+              </a>
+              <a
+                href="/"
+                class="text-[#f9f9f9] hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal tracking-wider pl-2"
+              >
+                &#9742; +91-9422-3516-56
+              </a>
+            </div>
+
+            <div class="">
+              <a
+                href="mailto:sales@mokshasolutions.com"
+                target="_blank"
+                class="text-[#f9f9f9] hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal tracking-wider"
+              >
+                &#128233; sales@mokshasolutions.com
+              </a>
+            </div>
+
+            <div class="">
+              <a
+                href="https://mokshasolutions.com/"
+                target="_blank"
+                class="text-[#f9f9f9] hover:text-blue-500 sm:text-lg 2xl:text-xl font-normal tracking-wider"
+              >
+                &#127760; www.mokshasolutions.com
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-between pt-8 sm:pt-10 sm:gap-x-28"
+          >
+            <div class="sm:py-4">
+              <h2 class="text-gray-400 sm:text-xs 2xl:text-sm font-normal">
+                2024 &#169;All Right Reserved By Moksha Solutions
+              </h2>
+            </div>
+
+            <div class="sm:py-4 py-2">
+              <h2 class="text-gray-400 sm:text-xs 2xl:text-sm font-normal">
+                Design & Developed By
+                <a
+                  href="https://mokshasolutions.com/"
+                  target="_blank"
+                  class="text-white hover:text-blue-500 cursor-pointer"
+                  >Moksha Solutions</a
+                >
+              </h2>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <!-- JAVASCRIPT/OTHER PACKAGES SECTION -->
+    <!-- Form/Email.js section -->
+    <script type="text/javascript">
+      function showForm() {
+        var formClass = document.querySelector(".wrapper");
+        formClass.classList.remove("!hidden");
+      }
+
+      function hideForm() {
+        var formClass = document.querySelector(".wrapper");
+        formClass.classList.add("!hidden");
+      }
+    </script>
+
+    <!-- email.js  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("GqvMimfOvNT10bq-E");
+      })();
+    </script>
+
+    <script>
+      // listen to the form submission
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const serviceID = "service_1gcrdpl";
+          const templateID = "template_pn6ohfb";
+
+          // send the email here
+          emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+              var form = document.getElementById("myForm");
+              var thankYouMessage = document.getElementById("thankYouMessage");
+              form.reset();
+              thankYouMessage.style.display = "block";
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("FAILED...");
+            }
+          );
+        });
+    </script>
+    <!-- end email.js  -->
+  </body>
+</html>
